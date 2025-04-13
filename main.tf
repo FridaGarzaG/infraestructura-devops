@@ -187,9 +187,9 @@ resource "aws_instance" "instancia_LinuxJump" {
 }
 
 #Muestra de información de las instancias
-output "instancia-IP_Publica-WindowsJump" {
+output "instancia-IP_Publica-LinuxJump" {
   description = "IP Publica de Linux Jump"
-  value = aws_instance.instancia_WindowsJump.public_ip
+  value = aws_instance.instancia_LinuxJump.public_ip
 }
 
 output "instancia-IP_Publica-PrimeraLinuxWeb" {
